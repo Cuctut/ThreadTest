@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c03de2a-1140-4b72-8195-c05a5573262e" name="变更" comment="通过DCL加深对线程安全、并发有序性、锁的理解">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/Thread/stopThreadsGracefully.java" afterDir="false" />
+    <list default="true" id="4c03de2a-1140-4b72-8195-c05a5573262e" name="变更" comment="如何优雅停止一个线程">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/Volatile/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/Volatile/MyVolatileThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/Volatile/Visibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="077db9c4-6f7b-40e1-a143-8b6b86058fe7" />
+        <option name="url" value="https://github.com/Cuctut/ThreadTest.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings"
@@ -63,10 +68,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lin.Volatile" />
       <recent name="com.lin.Concurrency" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.com.lin.Thread.stopThreadsGracefully">
+  <component name="RunManager" selected="应用程序.Visibility">
+    <configuration name="Visibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lin.Volatile.Visibility" />
+      <module name="ThreadTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.Volatile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.lin.Thread.stopThreadsGracefully" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lin.Thread.stopThreadsGracefully" />
       <module name="ThreadTest" />
@@ -80,65 +99,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stopThreadsGracefully.Test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Visibility.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThreadTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lin.Concurrency.DCL.*" />
+          <option name="PATTERN" value="com.lin.Volatile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lin.Thread" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.Thread.stopThreadsGracefully" />
-      <option name="METHOD_NAME" value="Test02" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stopThreadsGracefully.Test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThreadTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.Concurrency.DCL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lin.Thread" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.Thread.stopThreadsGracefully" />
-      <option name="METHOD_NAME" value="Test03" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stopThreadsGracefully.Test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThreadTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.Concurrency.DCL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lin.Thread" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.Thread.stopThreadsGracefully" />
-      <option name="METHOD_NAME" value="Test04" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stopThreadsGracefully.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThreadTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.Concurrency.DCL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lin.Thread" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.Thread.stopThreadsGracefully" />
+      <option name="PACKAGE_NAME" value="com.lin.Volatile" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.Volatile.Visibility" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Visibility.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThreadTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.Volatile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lin.Volatile" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.Volatile.Visibility" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Visibility.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThreadTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.Volatile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lin.Volatile" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.Volatile.Visibility" />
+      <option name="METHOD_NAME" value="test03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Visibility" />
+        <item itemvalue="JUnit.Visibility.test01" />
+        <item itemvalue="JUnit.Visibility.test02" />
+        <item itemvalue="JUnit.Visibility.test03" />
         <item itemvalue="应用程序.com.lin.Thread.stopThreadsGracefully" />
-        <item itemvalue="JUnit.stopThreadsGracefully.Test03" />
-        <item itemvalue="JUnit.stopThreadsGracefully.Test02" />
-        <item itemvalue="JUnit.stopThreadsGracefully.Test04" />
-        <item itemvalue="JUnit.stopThreadsGracefully.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +165,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680598147072</updated>
-      <workItem from="1680598149100" duration="9126000" />
+      <workItem from="1680598149100" duration="13975000" />
+      <workItem from="1680936817362" duration="4262000" />
     </task>
     <task id="LOCAL-00001" summary="通过DCL加深对线程安全、并发有序性、锁的理解">
       <created>1680679756665</created>
@@ -171,7 +175,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680679756665</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pom文件">
+      <created>1680679818680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680679818680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Default">
+      <created>1680679841840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680679841840</updated>
+    </task>
+    <task id="LOCAL-00004" summary="如何优雅停止一个线程">
+      <created>1680679866031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680679866031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +215,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="通过DCL加深对线程安全、并发有序性、锁的理解" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过DCL加深对线程安全、并发有序性、锁的理解" />
+    <MESSAGE value="pom文件" />
+    <MESSAGE value="Default" />
+    <MESSAGE value="如何优雅停止一个线程" />
+    <option name="LAST_COMMIT_MESSAGE" value="如何优雅停止一个线程" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lin/Volatile/Visibility.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
